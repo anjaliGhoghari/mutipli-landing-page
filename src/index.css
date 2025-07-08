@@ -1,0 +1,177 @@
+@import "./styles/fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --dimwhite:rgba(255, 255, 255, 0.10);
+  --black:#141414;
+  --purple:#C48BEF;
+  --gray:#ACAFB9;
+}
+
+.container{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  max-width: 1512px;
+
+}
+.container::before{
+  height: 100%;
+  width: 1px;
+  background-color:var(--dimwhite);
+  content: "";
+  position: absolute;
+  top: 0;
+  left:3rem;
+  mix-blend-mode: difference;
+}
+.container::after{
+  height: 100%;
+  width: 1px;
+  background-color:var(--dimwhite);
+  content: "";
+  position: absolute;
+  top: 0;
+  right:3rem;
+  mix-blend-mode: difference;
+}
+
+.inner-container{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1288px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media (min-width: 768px) {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+.nav-item {
+  outline: 1px solid var(--purple);
+  color: var(--purple);
+  position: relative;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--purple);
+  left: 0;
+  top: 0;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--purple);
+  right: 0;
+  top: 0;
+}
+
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--purple);
+  right: 0;
+  bottom: 0;
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--purple);
+  left: 0;
+  bottom: 0;
+}
+
+
+.new-button {
+  position: relative;
+  font-weight: 570;
+  font-size: 0.875rem;
+  border: 0.7px solid var(--purple);
+  color: var(--purple);
+  line-height: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 0.75rem;
+  padding-right: 6px;
+  transition: all 0.7s;
+  
+}
+
+.new-button:hover {
+  border-color: #141414;
+  background-color: var(--purple);
+  color: #141414;
+}
+
+.new-button::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--purple);
+  left: 0;
+  top: 0;
+}
+
+.new-button::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--purple);
+  right: 0;
+  top: 0;
+}
+
+.new-button span::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--purple);
+  left: 0;
+  bottom: 0;
+}
+
+.new-button span::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--purple);
+  right: 0;
+  bottom: 0;
+}
+
+.new-button:hover::after,
+.new-button:hover span::after,
+.new-button:hover::before,
+.new-button:hover span::before {
+  background: var(--black);
+}
