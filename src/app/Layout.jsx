@@ -6,7 +6,7 @@ function Layout({children}) {
   return (
     <>
    <Header/>
-   <main className='bg-customBlack overflow-hidden'>{children}</main>
+   <main className='bg-customBlack overflow-hidden '>{children}</main>
    <Footer/>
    </>
   )

@@ -2,11 +2,12 @@ const styles = {
     
     paddindY:
       "py-[128px]",
-    heading2:
-      "font-poppins font-semibold xs:text-[48px] text-[32px] text-white xs:leading-[70px] leading-[50px] w-full",
+    heading1:
+      "text-customWhite font-saans font-[570] text-[64px] leading-[95%] w-full",
     paragraph:
-      "font-poppins font-normal text-dimWhite text-[20px] leading-[30.8px]",
-   
+      "text-customDimWhite font-saans text-xl font-normal leading-[100%] tracking-[1px] w-full",
+    heading2:
+      "text-customWhite font-saans font-[570] text-[32px] leading-[95%] tracking-[1px] w-full",
     
   
    

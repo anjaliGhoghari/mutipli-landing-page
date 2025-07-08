@@ -6,7 +6,9 @@ export default {
       colors: {
         customPurple: "#C48BEF",
         customGray: "#ACAFB9",
-        dimWhite: "rgba(255, 255, 255, 0.10)",
+        customWhite: "rgba(255, 255, 255, 0.90)",
+        customDimWhite:"rgba(255, 255, 255, 0.70)",
+        containerLine:"rgba(255, 255, 255, 0.10)",
         customBlack: "#141414",
       },
       fontFamily: {
