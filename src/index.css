@@ -11,10 +11,10 @@
   box-sizing: border-box;
 }
 :root{
-  --dimwhite:rgba(255, 255, 255, 0.10);
+  --containerLine:rgba(255, 255, 255, 0.10);
   --black:#141414;
   --purple:#C48BEF;
-  --gray:#ACAFB9;
+
 }
 
 .container{
@@ -22,30 +22,40 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   max-width: 1512px;
+  @media (min-width: 768px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 
 }
 .container::before{
   height: 100%;
   width: 1px;
-  background-color:var(--dimwhite);
+  background-color:none;
   content: "";
   position: absolute;
   top: 0;
   left:3rem;
   mix-blend-mode: difference;
+  @media (min-width: 768px) {
+    background-color:var(--containerLine);
+  }
 }
 .container::after{
   height: 100%;
   width: 1px;
-  background-color:var(--dimwhite);
+  background-color:none;;
   content: "";
   position: absolute;
   top: 0;
   right:3rem;
   mix-blend-mode: difference;
+  @media (min-width: 768px) {
+    background-color:var(--containerLine);
+  }
 }
 
 .inner-container{
@@ -173,4 +183,59 @@
 .new-button:hover::before,
 .new-button:hover span::before {
   background: var(--black);
+}
+.footerline::before,
+.footerline::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #2C2C2C;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footerline::before {
+  left: 0;
+}
+
+.footerline::after {
+  right: 0;
+}
+.card::before{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background:#2C2C2C;
+  right: 0;
+  top: 0;
+}
+.card::after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background:#2C2C2C;
+  left: 0;
+  top: 0;
+}
+
+.card .card-content::after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background:#2C2C2C;
+  left: 0;
+  bottom: 0;
+}
+.card .card-content::before{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background:#2C2C2C;
+  right: 0;
+  bottom: 0;
 }

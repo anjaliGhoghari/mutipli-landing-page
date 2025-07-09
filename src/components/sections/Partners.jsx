@@ -4,13 +4,13 @@ import styles from "../../styles/style";
 function Partners() {
   return (
     <>
-      <section className=" border-b border-containerLine ">
+      <section id="partners" className=" border-b border-containerLine ">
         <div className="container">
           <div className="inner-container">
             <div
               className={`${styles.paddindY} flex flex-col justify-start items-center`}
             >
-              <h2 className={`${styles.heading2} mb-14`}>Our yield partners</h2>
+              <h2 className={`${styles.heading3} mb-14`}>Our yield partners</h2>
               <div className="flex flex-wrap items-center justify-between w-full ">
                 {partners.map((partners) => (
                   <div
