@@ -5,7 +5,7 @@ import { footerLinks } from "../../constants/footerLinks";
 import footer from "../../assets/images/footer.png";
 const Footer = () => {
   return (
-    <footer className="bg-customBlack">
+    <footer id="contact" className="bg-customBlack">
       <div className="container">
         <div className={`${styles.paddindY} inner-container`}>
           <div className="flex flex-col lg:flex-row justify-between items-start ">

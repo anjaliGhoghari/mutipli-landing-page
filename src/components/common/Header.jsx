@@ -15,15 +15,17 @@ const Header = () => {
           <img src={logo} alt='logo' className='max-w-[120px]'  />
           <nav>
           <ul className="text-[#ACAFB9] hidden lg:flex leading-7   text-[13px] font-normal gap-8 cursor-pointer">
-            {navLinks.map((nav) => (
+            {navLinks.map((nav,index) => (
               <li key={nav.id}>
-                <button
+                <button data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration={1000 + index * 300} 
                   onClick={() => setActive(nav)}
                   className={`hover:text-[#C48BEF] ${
                     active === nav ? "nav-item" : ""
                   }`}
                 >
-                <a href={`#${nav.id}`} className='py-4 px-2'>{nav.title}</a>
+                <a href={`#${nav.id}`}  className='py-4 px-2'>{nav.title}</a>
                 </button>
               </li>
             ))}

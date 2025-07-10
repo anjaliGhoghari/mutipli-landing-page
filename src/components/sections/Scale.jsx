@@ -27,7 +27,7 @@ function Scale() {
               yields.
             </p>
             <div className="flex justify-between items-center flex-wrap">
-              <div className=" flex items-start flex-col m-5 sm:m-0">
+              <div data-aos="zoom-in" className=" flex items-start flex-col m-5 sm:m-0">
                 {startCount ? (
                   <CountUp
                     end={10}
@@ -39,7 +39,7 @@ function Scale() {
                 )}
                 <p className={`${styles.paragraph}`}>Supported chains</p>
               </div>
-              <div className=" flex items-start flex-col m-5 sm:m-0">
+              <div data-aos="zoom-in" className=" flex items-start flex-col m-5 sm:m-0">
                 {startCount ? (
                   <CountUp
                     end={80}
@@ -51,7 +51,7 @@ function Scale() {
                 )}
                 <p className={`${styles.paragraph}`}>Partners</p>
               </div>
-              <div className="flex items-start flex-col m-5 sm:m-0">
+              <div data-aos="zoom-in" className="flex items-start flex-col m-5 sm:m-0">
                 {startCount ? (
                   <CountUp
                     end={12.56}
@@ -70,7 +70,7 @@ function Scale() {
                 <p className={`${styles.paragraph}`}>Average 7D APY</p>
               </div>
 
-              <div className="flex items-start flex-col m-5 md:m-0">
+              <div data-aos="zoom-in" className="flex items-start flex-col m-5 md:m-0">
                 {startCount ? (
                   <CountUp
                     end={100}

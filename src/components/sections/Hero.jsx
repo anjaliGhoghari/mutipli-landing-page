@@ -24,18 +24,19 @@ function Hero() {
                 returnDuration={3.1}
               />
             </div>
-            <div className="flex justify-center items-center text-center flex-col">
+            <div  className="flex justify-center items-center text-center flex-col">
               <h1
+              data-aos="zoom-in-down"
                 style={{ fontSize: "clamp(2.8rem, calc(7vw + 1rem), 4rem)" }}
                 className={`${styles.heading1}`}
               >
                 Yields from the world’s top asset managers made accessible.
               </h1>
-              <p className={`${styles.paragraph} mt-3 mb-9`}>
+              <p data-aos="zoom-in-down" className={`${styles.paragraph} mt-3 mb-9`}>
                 The smart gateway to institutional-grade, delta-neutral crypto
                 yields.
               </p>
-              <Button />
+              <Button  />
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Button() {
   return (
-    <button className=" new-button group ">
+    <button data-aos="flip-left" className=" new-button group ">
     <span>
       Deploy assets{" "}
       <svg
