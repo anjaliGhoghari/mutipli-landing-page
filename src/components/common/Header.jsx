@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import logo from "../../assets/icons/logo.svg";
 import Button from '../Button';
 import { navLinks } from '../../constants/navLinks';
-
 const Header = () => {
   const [active, setActive] = useState("Home");
 
